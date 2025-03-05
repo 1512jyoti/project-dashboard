@@ -1,70 +1,99 @@
-# Getting Started with Create React App
+Project Management Dashboard
+A Project Management Dashboard built with React, Redux, and React Router. This application allows users to manage multiple projects, each containing tasks that can be added, moved between states (To Do, In Progress, Done), and deleted. The dashboard provides a clean and intuitive interface for organizing tasks and projects.
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
-## Available Scripts
+Features
+Dashboard Page:
 
-In the project directory, you can run:
+View a list of projects.
 
-### `npm start`
+Each project displays its tasks with a delete button.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+Navigate to the project details page by clicking on a project.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+Project Details Page:
 
-### `npm test`
+View and manage tasks for a specific project.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+Add new tasks using a form.
 
-### `npm run build`
+Move tasks between states (To Do, In Progress, Done) using drag-and-drop.
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+Delete tasks.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+Add Project:
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+Add new projects to the dashboard using a form.
 
-### `npm run eject`
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+Technologies Used
+Frontend:
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+React
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+Redux (for state management)
 
-## Learn More
+React Router (for routing)
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+Formik (for form handling)
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+Yup (for form validation)
 
-### Code Splitting
+React DnD (for drag-and-drop functionality)
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+Styling:
 
-### Analyzing the Bundle Size
+Inline CSS (for simplicity)
+external css
+Material Ui
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+Usage
+Dashboard Page (/dashboard)
+Displays a list of projects.
 
-### Making a Progressive Web App
+Each project shows its tasks with a delete button.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+Click on a project to navigate to its details page.
 
-### Advanced Configuration
+Project Details Page (/project/:id)
+View and manage tasks for the selected project.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+Add new tasks using the "Add Task" form.
 
-### Deployment
+Move tasks between states (To Do, In Progress, Done) using drag-and-drop.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+Delete tasks using the delete button.
 
-### `npm run build` fails to minify
+Add Project
+Use the "Add Project" form on the dashboard to create a new project.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+
+
+# Prerequisites
+Before you begin, ensure you have the following installed on your system:
+
+Node.js (v14 or higher) - Download Node.js
+
+npm (v6 or higher) - Comes bundled with Node.js
+
+Code Editor (e.g., Visual Studio Code)
+
+# Create a New React Project
+npx create-react-app project-management
+ 
+ # Navigate into the project folder:
+ cd project-management
+
+ # Install Required Dependencies
+ npm install @reduxjs/toolkit react-redux react-router-dom formik yup react-dnd react-dnd-html5-backend
+
+ # Set Up Redux
+   <Provider store={store}>
+    <App />
+  </Provider>,
+
+  # Set Up the Router
+
+  # run the applicarion 
+  npm start
