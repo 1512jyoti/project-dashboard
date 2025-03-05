@@ -1,0 +1,95 @@
+
+
+
+   /* ProjectPage.css */
+.container {
+    max-width: 85%;
+    margin:  auto;
+    padding: 20px;
+  }
+  
+  .back-button {
+    color: #007bff;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    font: bold;
+  }
+  
+  .back-button:hover {
+    background-color: #6eabed;
+    color:white
+  }
+  
+  .projectpage-project {
+    background: #f9f9f9;
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+  }
+  
+  .chart-container {
+    background: white;
+    display: flex;
+    flex-direction: column; 
+    align-items: center;
+    justify-content: center; 
+    padding: 10px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-bottom: 20px;
+    text-align: center;
+    height: 100%; 
+}
+   .tasks-container {
+    background: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    /* margin-bottom: 2px; */
+  }
+  
+  .add-task-form {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    background: #fff;
+    padding: 5px;
+    width: 100%;
+  }
+  
+  .add-task-form input {
+    flex: 1;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 16px;
+  }
+  
+  .add-task-form button {
+    padding: 12px 20px;
+    background-color: #28a745;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+  }
+  
+  .add-task-form button:hover {
+    background-color: #218838;
+  }
+
+  
+  
+  .team-members {
+    background: #f9f9f9;
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-top: 20px;
+  }
+  
